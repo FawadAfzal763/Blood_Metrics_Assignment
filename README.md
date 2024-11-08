@@ -62,57 +62,50 @@ Setup Instructions
 Backend Setup
 Clone the Repository:
 
-bash
-Copy code
-git clone <repository-url>
-cd Backend
-Set up a Virtual Environment:
-
-bash
-Copy code
 python3 -m venv venv
 Activate the Virtual Environment:
 
 On Windows:
-bash
-Copy code
+
+
 .\venv\Scripts\Activate
 On macOS/Linux:
-bash
-Copy code
+
+
 source venv/bin/activate
 Install Dependencies:
 
-bash
-Copy code
+
+
 pip install -r requirements.txt
 Configure Environment Variables: Create a .env file and add your OpenAI API key:
 
 plaintext
-Copy code
+
 openai_api=YOUR_OPENAI_API_KEY
 Run the FastAPI Server:
 
-bash
-Copy code
+
+
 uvicorn main:app --reload
+
 The API should be accessible at http://127.0.0.1:8000.
 
 Frontend Setup
 Navigate to the Frontend Directory:
 
-bash
-Copy code
+
+
 cd Blood-Metrics
 Install Dependencies:
 
-bash
-Copy code
+
+
 npm install
 Run the React App:
 
-bash
-Copy code
+
+
 npm start
 The React app will run on http://localhost:3000.
 
@@ -120,7 +113,6 @@ API Usage
 To use the /api/insights endpoint, send a POST request with blood metrics data structured like this:
 
 json
-Copy code
 {
     "data": {
         "patient_1": {
