@@ -19,10 +19,10 @@ sampleData.json: A sample JSON file with test data for blood metrics, used to te
 Frontend Files (React)
 The frontend application is built with React and uses Tailwind CSS for styling.
 
-src/components/health_risk_summary/HealthRiskSummary.js: A component that calculates and displays a summary of high-risk and borderline metrics for all patients.
+src/components/health_risk_summary/HealthRiskSummary.js: A component that calculates and displays a summary of high-risk  metrics for all patients.
 src/components/metrics_table/MetricsTable.js: A component that renders a table with blood metrics data, highlighting high-risk values based on predefined thresholds.
 src/components/openai_insights/OpenAIInsights.js: A component that fetches and displays insights from the backend API, showing health analysis based on the blood metrics data.
-src/utils/HealthRiskUtils.js: Utility functions for determining risk levels (normal, borderline, or high-risk) based on thresholds for A1C, LDL, and Glucose values.
+src/utils/HealthRiskUtils.js: Utility functions for determining risk levels (normal,  high-risk) based on thresholds for A1C, LDL, and Glucose values.
 src/data/SampleData.json: Sample data used to populate the dashboard for testing purposes.
 App.js: Main entry point of the React app, which renders the dashboard by combining different components (HealthRiskSummary, MetricsTable, OpenAIInsights).
 App.css: Custom CSS for styling the application.
